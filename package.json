@@ -1,0 +1,12 @@
+{
+  "name": "set-funcs",
+  "version": "0.0.0",
+  "description": "set-funcs module",
+  "repository": "jeromedecoster/set-funcs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
