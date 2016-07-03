@@ -1,12 +1,35 @@
 {
   "name": "set-funcs",
-  "version": "0.0.0",
-  "description": "set-funcs module",
+  "version": "0.1.0",
+  "description": "A very limited subset of set-* functions I use every day",
   "repository": "jeromedecoster/set-funcs",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "files": [
+    "set-boolean.js",
+    "set-number.js",
+    "set-string.js"
+  ],
+  "keywords": [
+    "set",
+    "option",
+    "boolean",
+    "number",
+    "string"
+  ],
+  "author": {
+    "name": "Jérôme Decoster",
+    "url": "jeromedecoster.com"
   },
-  "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dev": "chokidar '*.js' 'test/*.js' -c 'npm run test'",
+    "test": "tape test/*.js | tap-spec || true"
+  },
+  "devDependencies": {
+    "chokidar-cli": "^1.2.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.0"
+  },
+  "dependencies": {
+    "is-funcs": "^0.4.1"
+  }
 }
